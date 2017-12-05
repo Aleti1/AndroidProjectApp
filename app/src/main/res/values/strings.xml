@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UdacityAndroidProject</string>
+    <string name="Menu">Menu</string>
+    <string name="description">Description</string>
+    <string name="contact">Contact</string>
+    <string name="images">Products</string>
+    <string name="bottom_text">SC ALETIS SRL</string>
+    <string name="description_first">Name: SC ALETIS SRL \nNIC: RO 8258**3</string>
+    <string name="description_second">Location: Constanta \nNumber of employees: 14 \nThe field of activity is: Commerce \nThis picture shows one of the business points of this company.  </string>
+    <string name="contact1">Address: \nCountry: Romania \nCity: Constanta \nStreet: B-dul Aurel Vlaicu No.187 A \nWarehouse No 29</string>
+    <string name="contact2">E-mail: \nalexealexandrudaniel@gmail.com \nPhone No: +40723.196.170 \nWebsite: under construction!</string>
+    <string name="contact3">Working hours: \n\nWeek days: \n07:00 &#8211; 17:00 \n\nSaturday: \n07:00 &#8211; 14:00 \n\nSunday: \nClosed</string>
+    <string name="coffe">Coffe!</string>
+    <string name="doncafe">Doncafe 250gr</string>
+    <string name="jacobs">Jacobs 250gr</string>
+    <string name="strong">Nescafe 3in1 Strong</string>
+    <string name="tobacco">Tobacco!</string>
+    <string name="kent">Kent Deluxe 100s</string>
+    <string name="kentbluehd">Kent Blue HD</string>
+    <string name="pmnlg">Pall Mall EC Black</string>
+    <string name="pmlng">Pall Mall EC Blue</string>
+    <string name="sweets">Sweets!</string>
+    <string name="chokotoff">Poiana Chokotoff</string>
+    <string name="kinder">Kinder Joy </string>
+    <string name="rafaelo">Raffaello T5 </string>
+    <string name="toffiffe">Toffifee </string>
+    <string name="prices1">All prices are expressed in RON and include VAT</string>
+    <string name="prices">0.01 Ron</string>
+        <!--i don't realy want to show the prices and i dont think anyone is interested in this for now :)) -->
+</resources>

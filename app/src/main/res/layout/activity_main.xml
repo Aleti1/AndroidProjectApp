@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aleti.udacityandroidproject.MainActivity">
+
+<!-- this is the family business and all the pictures
+  and information belong to us so I did
+  not need to ask anyone permission to use this data-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/grey">
+            <TextView
+                android:id="@+id/meniu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Menu"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/description_text"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/description" />
+            <Button
+                android:id="@+id/product_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/images"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/mybutton"/>
+            <Button
+                android:id="@+id/contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/mybutton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

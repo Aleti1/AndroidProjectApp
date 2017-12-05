@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aleti.udacityandroidproject.products">
+<!--In time this will take input from a database for a full list of products with prices
+  but for that i need to learn object in java .. :D:D:D -->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!-- this is the coffe section-->
+
+        <ImageView
+            android:contentDescription="@string/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coffe"
+            android:id="@+id/coffe"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/photo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/coffe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:text="@string/coffe"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="75sp" />
+
+        <TextView
+            android:id="@+id/descriptionprices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descriptionpricestobacco"
+            android:layout_alignStart="@+id/descriptionpricestobacco"
+            android:layout_below="@+id/photo_title"
+            android:text="@string/prices1"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+
+
+        <!-- coffeeeeeeeeee -->
+
+                <ImageView
+                    android:contentDescription="@string/bottom_text"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/doncafe"
+                    android:id="@+id/doncafe"
+                    android:layout_below="@id/coffe"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doncafe"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@id/doncafe"
+                    android:layout_toEndOf="@id/doncafe"
+                    android:id="@+id/doncafetittle"
+                    android:layout_below="@id/descriptionprices"
+                    android:layout_alignTop="@id/doncafe"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prices"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:id="@+id/price1"
+                    android:layout_toEndOf="@id/doncafe"
+                    android:layout_toRightOf="@id/doncafe"
+                    android:layout_below="@id/doncafetittle"
+                    android:layout_alignBottom="@id/doncafe"/>
+
+
+
+                <ImageView
+                    android:contentDescription="@string/bottom_text"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jacobs"
+                    android:id="@+id/jacobs"
+                    android:layout_below="@id/doncafe"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jacobs"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@id/doncafe"
+                    android:layout_toEndOf="@id/doncafe"
+                    android:id="@+id/jacobstittle"
+                    android:layout_below="@id/price1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prices"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:id="@+id/price2"
+                    android:layout_toEndOf="@id/doncafe"
+                    android:layout_toRightOf="@id/doncafe"
+                    android:layout_below="@id/jacobstittle"
+                    android:layout_alignBottom="@id/jacobs"/>
+                <ImageView
+                    android:contentDescription="@string/bottom_text"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/strong"
+                    android:id="@+id/strong"
+                    android:layout_below="@id/jacobs"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strong"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@id/strong"
+                    android:layout_toEndOf="@id/strong"
+                    android:id="@+id/strongtittle"
+                    android:layout_below="@id/price2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prices"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:id="@+id/price3"
+                    android:layout_toEndOf="@id/strong"
+                    android:layout_toRightOf="@id/strong"
+                    android:layout_below="@id/strongtittle"
+                    android:layout_alignBottom="@id/strong"/>
+<!-- this is the tobacco section -->
+        <ImageView
+            android:contentDescription="@string/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tobacco"
+            android:id="@+id/tobacco"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/strong"/>
+
+        <TextView
+            android:id="@+id/tobacco_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tobacco"
+            android:layout_alignEnd="@+id/descriptionprices"
+            android:layout_alignRight="@+id/descriptionprices"
+            android:layout_marginBottom="27dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tobacco"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="75sp" />
+
+        <TextView
+            android:id="@+id/descriptionpricestobacco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tobacco_description"
+            android:layout_centerHorizontal="true"
+            android:text="@string/prices1"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <!--tobacco section -->
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kent"
+                android:id="@+id/kent"
+                android:layout_below="@id/tobacco"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kent"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/kent"
+                android:layout_toEndOf="@id/kent"
+                android:id="@+id/kenttittle"
+                android:layout_below="@id/descriptionpricestobacco"
+                android:layout_alignTop="@id/kent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price4"
+                android:layout_toEndOf="@id/kent"
+                android:layout_toRightOf="@id/kent"
+                android:layout_below="@id/kenttittle"
+                android:layout_alignBottom="@id/kent"/>
+
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kentbluehd"
+                android:id="@+id/kentbluehd"
+                android:layout_below="@id/kent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kentbluehd"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/kentbluehd"
+                android:layout_toEndOf="@id/kentbluehd"
+                android:id="@+id/kentbluehdtittle"
+                android:layout_below="@id/price4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price5"
+                android:layout_toEndOf="@id/kentbluehd"
+                android:layout_toRightOf="@id/kentbluehd"
+                android:layout_below="@id/kentbluehdtittle"
+                android:layout_alignBottom="@id/kentbluehd"/>
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pmnlg"
+                android:id="@+id/pmnlg"
+                android:layout_below="@id/kentbluehd"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pmnlg"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/pmnlg"
+                android:layout_toEndOf="@id/pmnlg"
+                android:id="@+id/pmnlgtittle"
+                android:layout_below="@id/price5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price6"
+                android:layout_toEndOf="@id/pmnlg"
+                android:layout_toRightOf="@id/pmnlg"
+                android:layout_below="@id/pmnlgtittle"
+                android:layout_alignBottom="@id/pmnlg"/>
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pmlng"
+                android:id="@+id/pmlng"
+                android:layout_below="@id/pmnlg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pmlng"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/pmlng"
+                android:layout_toEndOf="@id/pmlng"
+                android:id="@+id/pmlngtittle"
+                android:layout_below="@id/price6"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price7"
+                android:layout_toEndOf="@id/pmlng"
+                android:layout_toRightOf="@id/pmlng"
+                android:layout_below="@id/pmlngtittle"
+                android:layout_alignBottom="@id/pmlng"/>
+
+
+
+<!-- this is the sweets section -->
+        <ImageView
+            android:contentDescription="@string/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sweets"
+            android:id="@+id/sweets"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/pmlng"/>
+
+        <TextView
+            android:id="@+id/sweets_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/sweets"
+            android:layout_marginBottom="27dp"
+            android:text="@string/sweets"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="75sp" />
+
+        <TextView
+            android:id="@+id/sweetsdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sweets_description"
+            android:layout_centerHorizontal="true"
+            android:text="@string/prices1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <!--sweets section -->
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chokotoff"
+                android:id="@+id/chokotoff"
+                android:layout_below="@id/sweets"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chokotoff"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/chokotoff"
+                android:layout_toEndOf="@id/chokotoff"
+                android:id="@+id/chokotofftittle"
+                android:layout_below="@id/sweetsdescription"
+                android:layout_alignTop="@id/chokotoff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price8"
+                android:layout_toEndOf="@id/chokotoff"
+                android:layout_toRightOf="@id/chokotoff"
+                android:layout_below="@id/chokotofftittle"
+                android:layout_alignBottom="@id/chokotoff"/>
+
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kinder"
+                android:id="@+id/kinder"
+                android:layout_below="@id/chokotoff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kinder"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/kinder"
+                android:layout_toEndOf="@id/kinder"
+                android:id="@+id/kindertittle"
+                android:layout_below="@id/price8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price9"
+                android:layout_toEndOf="@id/kinder"
+                android:layout_toRightOf="@id/kinder"
+                android:layout_below="@id/kindertittle"
+                android:layout_alignBottom="@id/kinder"/>
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rafaelo"
+                android:id="@+id/rafaelo"
+                android:layout_below="@id/kinder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rafaelo"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/rafaelo"
+                android:layout_toEndOf="@id/rafaelo"
+                android:id="@+id/rafaelotittle"
+                android:layout_below="@id/price9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price10"
+                android:layout_toEndOf="@id/rafaelo"
+                android:layout_toRightOf="@id/rafaelo"
+                android:layout_below="@id/rafaelotittle"
+                android:layout_alignBottom="@id/rafaelo"/>
+
+
+            <ImageView
+                android:contentDescription="@string/bottom_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toffiffe"
+                android:id="@+id/toffiffe"
+                android:layout_below="@id/rafaelo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toffiffe"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_toRightOf="@id/toffiffe"
+                android:layout_toEndOf="@id/toffiffe"
+                android:id="@+id/toffiffetittle"
+                android:layout_below="@id/price10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prices"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:id="@+id/price11"
+                android:layout_toEndOf="@id/toffiffe"
+                android:layout_toRightOf="@id/toffiffe"
+                android:layout_below="@id/toffiffetittle"
+                android:layout_alignBottom="@id/toffiffe"/>
+    </RelativeLayout>
+
+
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

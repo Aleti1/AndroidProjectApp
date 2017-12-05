@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aleti.udacityandroidproject.DescriptionActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/primul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="30dp"
+            android:text="@string/description_first"
+            android:background="@color/amber"
+            android:textColor="@color/black"
+            android:paddingBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:text="@string/description_second"
+            android:background="@color/grey"
+            android:textColor="@color/black"
+            android:paddingBottom="20dp"/>
+        <ImageView
+            android:contentDescription="@string/bottom_text"
+            android:src="@drawable/interior_photo"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            android:background="@color/grey"/>
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
